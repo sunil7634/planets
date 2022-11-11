@@ -1,0 +1,56 @@
+#git setup
+$ git config --global user.name "Sunil Linus"
+$ git config --global user.email "sunillaudari@gmail.com"
+
+#check git setting
+git config --list
+
+#initialize a repo
+$ cd ~/Desktop
+$ mkdir planets
+$ cd planets
+$ git init
+
+#change default branch master to main
+$ git checkout -b main
+
+#check the change
+$ git status
+
+# create a file, add some text
+$ echo 'hello this is 1st line' >> mars.text
+
+# add file to staging area
+$ git add mars.text
+
+# saves staged content to local repo
+$ git commit -m 'first change'
+
+# check status 
+$ git status
+
+# check history
+$ git log
+$ git log -1 #only last commit
+$ git log --online # reduce qty
+$ git log --online --graph
+
+# review changes
+$ git diff --staged
+
+# reten preious changes
+#$ git checkout
+
+#ignore file/dir
+$ touch .gitignore
+and add the text in the file
+
+#remote in GithHub
+- create a new repo of same name 
+#all instructions in the github page
+git remote add origin git@github.com:sunil7634/planets.git
+git branch -M main
+git push -u origin main
+
+#pull 
+git pull origin main
