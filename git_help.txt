@@ -1,3 +1,5 @@
+# https://swcarpentry.github.io/git-novice/09-conflict/index.html
+
 #git setup
 $ git config --global user.name "Sunil Linus"
 $ git config --global user.email "sunillaudari@gmail.com"
